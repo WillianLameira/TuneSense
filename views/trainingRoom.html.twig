@@ -1,0 +1,23 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <a href="#" class="image-link" onclick="playAudio('acorde')">
+        <img src="assets/img/speakers-sound.png" alt="Imagem" class="image">
+    <audio id="acorde">
+    <source src="assets/musical-notes/c-piano-chord.wav" type="audio/wav">
+    </audio>
+
+    <div class="content-informations">
+        <h1>C</h1>
+        <p>Toque para continuar</p>
+    </div>
+    </a>
+    <div class="list-buttons">
+        <button type="button" class="button d-none">F</button>
+        <button type="button" class="button">C</button>
+        <button type="button" class="button">G</button>
+        <button type="button" class="button">Am</button>
+    </div>
+{% endblock %}
+
